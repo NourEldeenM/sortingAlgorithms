@@ -13,7 +13,7 @@
 
 1. Array is imaginary divided into 2 parts (sorted & unsorted) just as selection sort.
 2. sorted part contains the first element in the array, & unsorted has the rest of the array.
-3. In every step, the algorithm takes the first element in the unsorted part then <bold>Inserts</bold> it in its right place in sorted part (by shifting elements to assure it's put in its right place).
+3. In every step, the algorithm takes the first element in the unsorted part then Inserts it in its right place in sorted part (by shifting elements to assure it's put in its right place).
 4. Algorithm ends when unsorted part is empty.
 
 ![insertion sort visual](images/insertionSort.png)

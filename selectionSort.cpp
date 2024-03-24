@@ -19,7 +19,11 @@ void selectionSort(int arr[], int n)
     }
 }
 
-
 int main()
 {
+    int arr[] = {1, 5, 3, 2, 8, 7};
+    selectionSort(arr, 6);
+    for (auto &i : arr)
+        cout << i << " ";
+    cout << endl;
 }
