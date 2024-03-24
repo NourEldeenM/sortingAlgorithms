@@ -29,3 +29,13 @@
 
 ![complexity](images/bubbleSort.png)
 
+## Shell sort (Improved insertion sort)
+
+1. Gaps and sub-lists: Shell sort introduces the concept of a gap. It starts with a large gap value and repeatedly sorts sub-lists of elements separated by that gap. The idea is to take advantage of the larger distance between elements to move them closer to their sorted positions more efficiently.
+
+2. Sorting sub-lists:  Shell sort iterates through the list, considering elements separated by the current gap. For each gap value, it performs an insertion sort on these sub-lists. This allows elements to "jump" larger distances in the list, reducing disorder more quickly.
+
+3. Shrinking the gap:  After a pass with the current gap, the gap value is reduced (typically divided by a factor like 2 or 3). This process continues until the gap becomes 1, essentially performing a normal insertion sort on the entire list.
+
+4. Effectively moving elements: By using larger gaps initially, shell sort can move elements that are far apart in the list more efficiently compared to just shifting them by one position like in insertion sort. This reduces the number of swaps needed in the later stages with smaller gaps.
+
