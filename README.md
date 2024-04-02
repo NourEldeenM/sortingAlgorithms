@@ -39,3 +39,33 @@
 
 4. Effectively moving elements: By using larger gaps initially, shell sort can move elements that are far apart in the list more efficiently compared to just shifting them by one position like in insertion sort. This reduces the number of swaps needed in the later stages with smaller gaps.
 
+## Merge sort
+1. Part 1: divide the array like this:
+![merge sort split](images/mergeSortSplit.png)
+2. Part 2: sort then merge:
+![merge sort collect](images/mergeSortCollect.png)
+
+## Quick sort
+1. 
+
+## Count sort
+1. First, you need to determine the highest value (maximum) in the array
+2. Make an array (often called the "count array") with a size equal to the maximum value you found in step 1 plus 1. This extra space is because you'll be using the index of this array to store the count of each element.
+3. Initialize all the values in the count array to 0.
+4. Iterate through the original array, & for each element increment the corresponding index in the count array by 1. This means that count[arr[i]]++ will increment the count for the element found at index i in the original array.
+5. Iterate through the count array from second element to the end. For each index, add the count at the previous index to current count. This creates a running total of element counts (count[i] += count[i - 1]).
+6. Allocate a new array (often called the "output array") with the same size as the original array. This will store the sorted elements.
+Iterate through the original array in reverse order (from the last element to the first). For each element, use the value in the count array as an index to place the element in the output array. Decrement the count at that index in the count array to prepare for the next element with the same value (ensures stability if multiple elements have the same value).
+
+## Radix sort
+1. sort based on bits.
+2. start by least significant bit & sort based on it.
+3. move to the next bit and sort.
+4. keep repeating steps 2 & 3 till you reach the end.
+5. You will have sorted list by the end.
+
+## Bucket sort
+1. It creates a fixed number of empty buckets.
+Each element from the unsorted list is then distributed into its designated bucket based on some criteria. This criteria often involves a mapping function that determines the appropriate bucket for an element's value.
+2. Once all elements are scattered into their respective buckets, each bucket is independently sorted using a separate sorting algorithm. A simple sorting algorithm like insertion sort is often chosen for this step due to the typically smaller size of elements within each bucket.
+3. Finally, the sorted elements from each bucket are combined sequentially to form the final sorted list.
