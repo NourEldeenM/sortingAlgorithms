@@ -2,13 +2,8 @@
 
 ## Selection sort
 
-### Time Complexity:
-
-#### Best, Avg, Worst: N^2
-
-### Memory: 1
-
-### In place
+### Time Complexity: Best, Avg, Worst: N^2
+### Memory: 1 (In place)
 
 1. Array is imaginary divided into 2 parts (sorted & unsorted).
 2. Sorted part is empty and unsorted one has the whole array.
@@ -19,15 +14,8 @@
 
 ## Insertion sort
 
-### Time Complexity:
-
-#### Best: N
-
-#### Avg, Worst: N^2
-
-### Memory: 1
-
-### In place
+### Time Complexity: Best: N // Avg, Worst: N^2
+### Memory: 1 (In place)
 
 1. Array is imaginary divided into 2 parts (sorted & unsorted) just as selection sort.
 2. sorted part contains the first element in the array, & unsorted has the rest of the array.
@@ -38,13 +26,8 @@
 
 ## Bubble sort
 
-### Time Complexity:
-
-#### Best, Avg, Worst: N^2
-
-### Memory: 1
-
-### In place
+### Time Complexity: Best, Avg, Worst: N^2
+### Memory: 1 (In place)
 
 1. Start at the beginning: Imagine you have an unsorted list of elements. Bubble sort starts by comparing the first two elements.
 2. Compare and swap: If the first element is larger than the second element, they are swapped. This brings the larger element one step closer to the end of the list.
@@ -67,13 +50,9 @@
 
 ## Merge sort
 
-### Time Complexity:
+### Time Complexity: Best, Avg, Worst: N log(N)
 
-#### Best, Avg, Worst: N log(N)
-
-### Memory: N
-
-### Not in place
+### Memory: N (Not in place)
 
 1. Part 1: divide the array like this:
    ![merge sort split](images/mergeSortSplit.png)
@@ -82,26 +61,15 @@
 
 ## Quick sort
 
-### Time Complexity:
-
-#### Best, Avg: N log(N)
-
-#### Worst: N^2.
-
-### Memory: 1
-
-### in place
+### Time Complexity: Best, Avg: N log(N) // Worst: N^2.
+### Memory: 1 (in place)
 1. 
+
 
 ## Count sort
 
-### Time Complexity:
-
-#### Best, Avg, Worst: N
-
-### Memory: N
-
-### not in place
+### Time Complexity: Best, Avg, Worst: N
+### Memory: N (not in place)
 
 1. First, you need to determine the highest value (maximum) in the array
 2. Make an array (often called the "count array") with a size equal to the maximum value you found in step 1 plus 1. This extra space is because you'll be using the index of this array to store the count of each element.
